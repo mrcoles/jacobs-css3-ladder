@@ -1,0 +1,61 @@
+
+#boxes {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    height: 620px;
+    transition: margin 500ms ease-out;
+}
+#boxes.pre-slide {
+    margin-top: 100px;
+    transition: margin 0 ease-out;
+}
+
+.group {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bg-boxes {
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+#bg-boxes .box {
+    margin-bottom: 0;
+}
+
+.group { margin-top: 100px; z-index: 0; }
+#bg-boxes { z-index: 1; }
+.group.front { margin-top: 0; z-index: 2; }
+
+.box {
+    position: relative;
+    background: #c79b5c url(http://mrcoles.com/media/js/scrabble2/wood.png) scroll repeat center center;
+    margin-bottom: 100px;
+    border: 1px solid #600;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 0 0 #98643c, 2px 0 0 #98643c, 3px 0 0 #98643c;
+    z-index: 6;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box:nth-child(2) { z-index: 5; }
+.box:nth-child(3) { z-index: 4; }
+.box:nth-child(4) { z-index: 3; }
+.box:nth-child(5) { z-index: 2; }
+.box:nth-child(6) { z-index: 1; }
+
+.box.flip {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
