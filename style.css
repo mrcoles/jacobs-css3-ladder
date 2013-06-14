@@ -3,12 +3,13 @@
     position: relative;
     display: inline-block;
     margin-top: 0;
-    height: 620px;
-    transition: margin 500ms ease-out;
+    height: 700px;
+    transition: all 500ms ease-out;
 }
 #boxes.pre-slide {
     margin-top: 100px;
-    transition: margin 0 ease-out;
+    height: 600px;
+    transition: all 0 ease-out;
 }
 
 .group {
