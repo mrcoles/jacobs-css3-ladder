@@ -2,6 +2,7 @@
 #boxes {
     position: relative;
     display: inline-block;
+    width: 100%;
     margin-top: 0;
     height: 700px;
     transition: all 500ms ease-out;
@@ -12,16 +13,16 @@
     transition: all 0 ease-out;
 }
 
-.group {
+.group,
+#bg-boxes {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    margin-left: -50px;
 }
 
 #bg-boxes {
-    position: absolute;
     top: 100px;
-    left: 0;
 }
 #bg-boxes .box {
     margin-bottom: 0;
