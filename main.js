@@ -7,7 +7,7 @@
     var canAnimate = true;
     var flipped = false;
 
-    $('.group.front .box').first().hover(function() {
+    $('.group.front .box').on('touchstart mouseover', function() {
         if (!canAnimate) return;
         canAnimate = false;
         var count = 0;
